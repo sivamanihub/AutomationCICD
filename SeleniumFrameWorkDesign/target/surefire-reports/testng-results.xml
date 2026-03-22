@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="2" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-15T13:44:20 IST" name="Suite" finished-at="2026-03-15T13:45:07 IST" duration-ms="46937">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="C168_ErrorValidation.LonginError()[pri:0, instance:selenium.tests.C168_ErrorValidation@cecf639]" name="LonginError" class="selenium.tests.C168_ErrorValidation"/>
+      </group> <!-- ErrorHandling -->
+      <group name="purchase">
+        <method signature="C167_PageObjectModel2.submitOrder(java.util.HashMap)[pri:0, instance:selenium.tests.C167_PageObjectModel2@368247b9]" name="submitOrder" class="selenium.tests.C167_PageObjectModel2"/>
+      </group> <!-- purchase -->
+    </groups>
+    <test started-at="2026-03-15T13:44:20 IST" name="submit" finished-at="2026-03-15T13:44:55 IST" duration-ms="35335">
+      <class name="selenium.tests.C167_PageObjectModel2">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:selenium.tests.C167_PageObjectModel2@368247b9]" started-at="2026-03-15T13:44:20 IST" name="launchApplication" finished-at="2026-03-15T13:44:40 IST" duration-ms="20378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:selenium.tests.C167_PageObjectModel2@368247b9]" started-at="2026-03-15T13:44:40 IST" name="submitOrder" data-provider="getData" finished-at="2026-03-15T13:44:43 IST" duration-ms="2642" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=sivamani354@gmail.com, productName=ZARA COAT 3, Password=Sivamani354@}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at sivamani.PagObjectModel.ProductCatalogue.addProductToCart(ProductCatalogue.java:56)
+at selenium.tests.C167_PageObjectModel2.submitOrder(C167_PageObjectModel2.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.tests.C167_PageObjectModel2@368247b9]" started-at="2026-03-15T13:44:43 IST" name="tearDown" finished-at="2026-03-15T13:44:44 IST" duration-ms="648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:selenium.tests.C167_PageObjectModel2@368247b9]" started-at="2026-03-15T13:44:44 IST" name="launchApplication" finished-at="2026-03-15T13:44:53 IST" duration-ms="8765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:selenium.tests.C167_PageObjectModel2@368247b9]" started-at="2026-03-15T13:44:53 IST" name="submitOrder" data-provider="getData" finished-at="2026-03-15T13:44:54 IST" duration-ms="1353" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=Sivamani3@gmail.com, productName=ADIDAS ORIGINAL, Password=Mani354@}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at sivamani.PagObjectModel.ProductCatalogue.addProductToCart(ProductCatalogue.java:56)
+at selenium.tests.C167_PageObjectModel2.submitOrder(C167_PageObjectModel2.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.tests.C167_PageObjectModel2@368247b9]" started-at="2026-03-15T13:44:54 IST" name="tearDown" finished-at="2026-03-15T13:44:55 IST" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Order()[pri:0, instance:selenium.tests.C167_PageObjectModel2@368247b9]" started-at="2026-03-15T13:44:55 IST" name="Order" finished-at="2026-03-15T13:44:55 IST" depends-on-methods="selenium.tests.C167_PageObjectModel2.submitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method selenium.tests.C167_PageObjectModel2.Order() on instance selenium.tests.C167_PageObjectModel2@368247b9 depends on not successfully finished methods 
+[selenium.tests.C167_PageObjectModel2.submitOrder() on instance selenium.tests.C167_PageObjectModel2@368247b9]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method selenium.tests.C167_PageObjectModel2.Order() on instance selenium.tests.C167_PageObjectModel2@368247b9 depends on not successfully finished methods 
+[selenium.tests.C167_PageObjectModel2.submitOrder() on instance selenium.tests.C167_PageObjectModel2@368247b9]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Order -->
+      </class> <!-- selenium.tests.C167_PageObjectModel2 -->
+    </test> <!-- submit -->
+    <test started-at="2026-03-15T13:44:20 IST" name="ErrorValidation" finished-at="2026-03-15T13:45:07 IST" duration-ms="46937">
+      <class name="selenium.tests.C168_ErrorValidation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:selenium.tests.C168_ErrorValidation@cecf639]" started-at="2026-03-15T13:44:20 IST" name="launchApplication" finished-at="2026-03-15T13:44:36 IST" duration-ms="16227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="LonginError()[pri:0, instance:selenium.tests.C168_ErrorValidation@cecf639]" started-at="2026-03-15T13:44:36 IST" name="LonginError" finished-at="2026-03-15T13:44:38 IST" duration-ms="1632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LonginError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.tests.C168_ErrorValidation@cecf639]" started-at="2026-03-15T13:44:38 IST" name="tearDown" finished-at="2026-03-15T13:44:38 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:selenium.tests.C168_ErrorValidation@cecf639]" started-at="2026-03-15T13:44:38 IST" name="launchApplication" finished-at="2026-03-15T13:44:49 IST" duration-ms="11125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submit()[pri:0, instance:selenium.tests.C168_ErrorValidation@cecf639]" started-at="2026-03-15T13:44:49 IST" name="submit" finished-at="2026-03-15T13:45:06 IST" duration-ms="17488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.tests.C168_ErrorValidation@cecf639]" started-at="2026-03-15T13:45:06 IST" name="tearDown" finished-at="2026-03-15T13:45:07 IST" duration-ms="356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- selenium.tests.C168_ErrorValidation -->
+    </test> <!-- ErrorValidation -->
+  </suite> <!-- Suite -->
+</testng-results>
