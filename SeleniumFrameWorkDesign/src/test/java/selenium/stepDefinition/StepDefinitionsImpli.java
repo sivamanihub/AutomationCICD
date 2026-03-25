@@ -36,7 +36,7 @@ public class StepDefinitionsImpli extends BaseTest {
 	public void logged_in_withusername_and_password(String userName, String password) {
 		pc = landingPage.LoginApplication(userName, password);
 	}*/
-
+      //hi narendra
 	@When("^Checkout (.+) to Cart$")
 	public void checkout_product_to_cart(String productName) {
 
