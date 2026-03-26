@@ -29,7 +29,7 @@ public class ProductCatalogue extends AbstracComponents{
 	@FindBy(xpath="//button[@routerlink='/dashboard/cart']")
 	WebElement clickcart;
 	//d.findElement(By.xpath("//button[@routerlink='/dashboard/cart']")).click();
-	
+	//naveen
 	
 	By productBy= By.cssSelector(".mb-3");
 	By toastMessage= By.cssSelector("#toast-container");
